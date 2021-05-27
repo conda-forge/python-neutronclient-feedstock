@@ -26,7 +26,7 @@ requirements:
     - cliff >=3.4.0
     - debtcollector >=1.2.0
     - iso8601 >=0.1.11
-    - keystoneauth1 >=3.4.0
+    - keystoneauth1 >=3.8.0
     - netaddr >=0.7.18
     - os-client-config >=1.28.0
     - osc-lib >=1.12.0
