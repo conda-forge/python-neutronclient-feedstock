@@ -1,5 +1,5 @@
 {% set name = "python-neutronclient" %}
-{% set version = "7.8.0" %}
+{% set version = "8.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-neutronclient-{{ version }}.tar.gz
-  sha256: 9bc66b2952912c2ba298d4c8492db897a5eafcb0ecf757e37baa691b70b47b4e
+  sha256: f54cbfde73406a80aae540921c045408faccbd1eb015f35ac112cea3019269fb
 
 build:
   number: 0
