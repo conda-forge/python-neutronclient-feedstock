@@ -1,5 +1,5 @@
 {% set name = "python-neutronclient" %}
-{% set version = "7.8.0" %}
+{% set version = "8.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-neutronclient-{{ version }}.tar.gz
-  sha256: 9bc66b2952912c2ba298d4c8492db897a5eafcb0ecf757e37baa691b70b47b4e
+  sha256: f54cbfde73406a80aae540921c045408faccbd1eb015f35ac112cea3019269fb
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
   host:
     - pbr >=2.0.0
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
     - cliff >=3.4.0
     - debtcollector >=1.2.0
@@ -35,7 +35,7 @@ requirements:
     - oslo.serialization !=2.19.1,>=2.18.0
     - oslo.utils >=3.33.0
     - pbr !=2.1.0,>=2.0.0
-    - python >=3.6
+    - python >=3.8
     - python-keystoneclient >=3.8.0
     - requests >=2.14.2
     - simplejson >=3.5.1
