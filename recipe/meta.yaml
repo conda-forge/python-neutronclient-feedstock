@@ -21,7 +21,7 @@ requirements:
   host:
     - pbr >=2.0.0
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
     - cliff >=3.4.0
     - debtcollector >=1.2.0
@@ -35,7 +35,7 @@ requirements:
     - oslo.serialization !=2.19.1,>=2.18.0
     - oslo.utils >=3.33.0
     - pbr !=2.1.0,>=2.0.0
-    - python >=3.6
+    - python >=3.8
     - python-keystoneclient >=3.8.0
     - requests >=2.14.2
     - simplejson >=3.5.1
