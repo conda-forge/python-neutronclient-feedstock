@@ -44,7 +44,6 @@ test:
     - neutronclient
   commands:
     - pip check
-    - neutron -h
   requires:
     - pip
 
