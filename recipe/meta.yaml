@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-neutronclient-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/python-neutronclient-{{ version }}.tar.gz
   sha256: 53cd9923f43a3b0772a40e3561f74655adc8038f90261ab3de05b6211d12edcb
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,7 +19,7 @@ requirements:
   host:
     - pbr >=2.0.0
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - cliff >=3.4.0
     - debtcollector >=1.2.0
@@ -33,7 +33,7 @@ requirements:
     - oslo.serialization !=2.19.1,>=2.18.0
     - oslo.utils >=3.33.0
     - pbr !=2.1.0,>=2.0.0
-    - python >=3.8
+    - python >={{ python_min }}
     - python-keystoneclient >=3.8.0
     - requests >=2.14.2
     - openstacksdk >=1.5.0 # Apache-2.0
@@ -45,6 +45,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://docs.openstack.org/python-neutronclient/latest/
