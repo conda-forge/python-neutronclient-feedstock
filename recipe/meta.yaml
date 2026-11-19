@@ -1,5 +1,5 @@
 {% set name = "python-neutronclient" %}
-{% set version = "14.0.0" %}
+{% set version = "14.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 9f7ba93e6845e381b833eb54c8fd143160b8fa026c383078f9ac39de7f3c5d19
+  sha256: c9011176bfeb5a4d49766fb7cef8fc46b5f1db791e5c100849536117d03a1fe4
 
 build:
   number: 0
